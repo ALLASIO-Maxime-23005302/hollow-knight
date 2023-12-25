@@ -1,0 +1,73 @@
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding-left: 85%;
+  font-size: 100%;
+  height: auto;
+}
+
+.texte_histoire {
+  position: center;
+}
+
+.Acceuil video {
+  position: relative;
+  width: auto;
+  height: auto;
+}
+
+.Acceuil img {
+  width: auto;
+  position: relative;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -125%);
+}
+
+.text_carte_du_jeu {
+  width: 150px;
+  height: 150px;
+}
+
+.dark-mode {
+  background: linear-gradient(90deg, black, #303030, black);
+  color: body;
+}
+
+.light-mode {
+  background: linear-gradient(90deg, white, #AED6F1, white);
+  color: black;
+}
+
+.pink-mode {
+  background: linear-gradient(90deg, #b3001f, #ff002d, #b3001f);
+  color: black;
+}
+
+.blue-mode {
+  background: linear-gradient(90deg, #0313da, #007095, #0313da);
+  color: white;
+}
+
+.green-mode {
+  background: linear-gradient(90deg, #2b6422, #00db00, #2b6422);
+  color: white;
+}
+
+.yellow-mode {
+  background: linear-gradient(90deg, #b5860b, #f3c507, #b5860b);
+  color: black;
+}
+
+
+body {
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background: black;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
