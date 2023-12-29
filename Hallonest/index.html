@@ -2,25 +2,27 @@
 <html lang="fr">
 
 <head>
-  <!-- <meta http-equiv="refresh" content="5"> -->
-  <meta name="descripion" content="Un petit site créé par des étudiants parlant de l'un des meilleurs jeux indépendant">
-  <meta name="Autheur" content="Allasio Maxime, Armani Baptiste">
   <meta charset="utf-8">
   <title>Hollow Knight</title>
+  <meta name="description"
+    content="Un petit site créé par des étudiants parlant de l'un des meilleurs jeux indépendant">
+  <meta name="Autheur" content="Allasio Maxime, Armani Baptiste">
+  <meta name="date" content="23-12-2023">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" sizes="64x64" href="icon_site.webp">
+  <link rel="stylesheet" href="page2.html">
+  <link rel="icon" type="image/png" sizes="64x64" href="image/icon_site.webp">
+  <script src="script.js"></script>
+
 </head>
 
 <body>
-  <a href="https://fr.wikipedia.org/wiki/Hollow_Knight">
-    <h1>Hollow Knight</h1>
+  <!-- <a href="https://fr.wikipedia.org/wiki/Hollow_Knight"> -->
+  <!--<h1>Hollow Knight</h1>-->
   </a>
   <header>
-    
-    <div class="sticky">
-
-      <select>
-        <option value="Thème">--Choisir un thème--</option>
+    <div class="couleur">
+      <select aria-label="couleur">
         <option value="sombre" , onclick="noir()">Nuit</option>
         <option value="clair" , onclick="blanc()">Jour</option>
         <option value="Mine de cristal" , onclick="rose()">Mine de cristal</option>
@@ -30,34 +32,114 @@
       </select>
     </div>
 
+
+    <!-- <div class="Top">
+      <img type="image/png" src="image/hornet.jpg" alt="hornet" onclick="haut()" />
+    </div> -->
+
+
+
+
     <div class="Acceuil">
-      <video id="background-video" autoplay loop muted>
-        <source src="Hollow Knight Website Header.mp4" type="video/mp4">
+      <video id="background-video" autoplay loop mute>
+        <source src="Hollow Knight Website Header.mp4" type="video/mp4" alt="extrait du jeu">
       </video>
-      <img src="logo_main.webp" , alt="Logo du jeu hollow knight" />
+      <img type="image/png" src="image/logo_main.webp" alt="Logo du jeu hollow knight" />
     </div>
   </header>
 
-  <div class="text_carte_du_jeu" <p1>
-    <img src="carte_du_jeu.jpg" , alt="Carte complète du jeu">
-    </p1>
+
+  <br><br><br><br>
+
+
+  <div class="cadre_image">
+    <label for="Carte">
+      <h2>Carte du jeu</h2>
+    </label>
+    <a href="image/full_map_jeu.webp"><img type="image/png" src="image/full_map_jeu.webp" alt="Carte du jeu" /></a>
   </div>
 
-  <p1>
-    <div class="texte_histoire">
-      <h2>----Résumé----</h2>
-      <h3> On incarne un Chevalier à la recherche de réponse à travers un monde en ruine et infecté par la corruption.
-        On part à la rencontre de mine géante, de ville soutéraine, de caverne fleurie, réplique de ruche, colisée ou
-        même la demeure des dieux. </h3>
+
+  <br><br><br><br>
+
+
+  <div class="center">
+    <div class="les_textes">
+      <div>
+        <h1>----Résumé----</h1>
+        <p>
+        <h2>Hollow knight est un jeu développé par la Team Cherry où l'on incarne un Chevalier à la cherche de réponses
+          à
+          travers un monde en ruine et infecté par la corruption. <br>
+          On part à la recherche d'une mine géante, d'une ville souterraine, de cavernes fleuries, d'une réplique de
+          ruche, d'un colisée ou
+          même de la demeure des dieux.
+        </h2>
+        </p>
+      </div>
+      <br><br>
+      <div>
+        <h1>----SilkSong----</h1>
+        <p>
+        <h2>Dans cette extension on pourra incarné le personnage de hornet (princesse et protectrice du royaume). <br>
+          Cette suite promet d'ajouté des nouvelles zones explorables, des nouveaux boss et de nouveaux collectibles /
+          activable. <br>
+          Elle était initialement prévue pour 2014 mas cette dernière fut repoussé et depuis 2019, nous n'avons plus
+          aucunes nouvelles.
+        </h2>
+        </p>
+      </div>
     </div>
-  </p1>
-  <br>
-  <div class="text_silksong">
-    <h2>---Silksong---</h2>
-    <h3> Silksong nous donnera l'occasion d'incarnet hornet (princesse et protectrice d'hallonest). Cette extension
-      prévoie de rajouter des nouveaux boss, ennemies, PNJ ou encore nouvelles zones explorables. </h3>
   </div>
-  
-  <script src="script.js"></script>
+
+
+  <br><br><br><br>
+
+
+  <div class="partie_carte">
+    <div class="Mont_cristal">
+      <div class="image_mine" , align="left">
+        <a href="image/carte_mont_cristal.webp"><img src="image/carte_mont_cristal.webp" type="image/png"
+            alt="Mont cristal" /></a>
+      </div>
+      <div class="mine" align="right">
+        <strong>
+          <h1>Mont cristal</h1>
+          <p1>
+            <h2>Le Mont de cristal est une mine qui se trouve dans la partie supérieure droite de la carte, <br>
+              cette
+              dernière à pour particularité d'être remplie de cristaux.<br>
+              De plus, elle possède aussi une amélioration importante qui constitue l'avenir de l'aventure du joueur.
+            </h2>
+          </p1>
+        </strong>
+      </div>
+    </div>
+    <br><br>
+    <div class="cité_larme">
+      <div class="cité_image" align="right">
+        <a href="image/Carte Cité.webp"><img src="image/Carte Cité.webp" type="image/png" alt="Cité des larmes" /></a>
+      </div>
+      <div class="cite_larme" , align="left">
+        <h1>Cité des larmes</h1>
+        <h2>
+          <p1>Cette ville est considérée comme la capitale d'Hallownest. Elle a été construite dans une immense caverne
+            en
+            dessous du lac bleu. <br>
+            Depuis ça construction la ville reçoit des tones d'eau par jour qui provient tout droit du lac qui est juste
+            au dessus. C'est à cause de cette "pluie" que les habitants l'ont appeler la Cité des Larmes. <br>
+          </p1>
+        </h2>
+      </div>
+    </div>
+  </div>
+
+  <br><br><br><br>
+
+  <footer>
+    <a href="page2.html">Ecrivez votre avis</a>
+  </footer>
+
+</body>
 
 </html>

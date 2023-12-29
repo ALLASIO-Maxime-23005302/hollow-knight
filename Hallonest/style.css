@@ -1,34 +1,77 @@
-div.sticky {
-  position: -webkit-sticky;
+.couleur {
+  display: flex;
   position: sticky;
+  right: auto;
   top: 0;
   padding-left: 85%;
-  font-size: 100%;
-  height: auto;
 }
 
-.texte_histoire {
-  position: center;
-}
+
+
 
 .Acceuil video {
-  position: relative;
   width: auto;
   height: auto;
 }
 
 .Acceuil img {
-  width: auto;
-  position: relative;
-  top: 50%;
-  left: 30%;
-  transform: translate(-50%, -125%);
+  position: absolute;
+  width: 50%;
+  height: auto;
+  left: 25%;
+  top: 15%;
 }
 
-.text_carte_du_jeu {
-  width: 150px;
-  height: 150px;
+
+
+.cadre_image img {
+  width: 50%;
+  height: auto;
 }
+
+
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.les_textes {
+  padding: 0 2em;
+  border: 5px double white;
+}
+
+
+
+.partie_carte mine {
+  position: right;
+}
+
+.Mont_cristal {
+  display: flex;
+  justify-content: cneter;
+}
+
+.image_mine img {
+  position: left;
+  height: auto;
+  max-width: 650px;
+  width: 75%;
+}
+
+.cité_larme {
+  display: flex;
+  justify-content: center;
+}
+
+.cité_image img {
+  position: right;
+  height: auto;
+  max-width: 650px;
+  width: 100%;
+}
+
+
 
 .dark-mode {
   background: linear-gradient(90deg, black, #303030, black);
@@ -41,24 +84,30 @@ div.sticky {
 }
 
 .pink-mode {
-  background: linear-gradient(90deg, #b3001f, #ff002d, #b3001f);
-  color: black;
+  background: linear-gradient(90deg, #212121, #880297, #303030);
+  color: white;
 }
 
 .blue-mode {
-  background: linear-gradient(90deg, #0313da, #007095, #0313da);
+  background: linear-gradient(90deg, #0D0056, #30615e, #0D0056);
   color: white;
 }
 
 .green-mode {
-  background: linear-gradient(90deg, #2b6422, #00db00, #2b6422);
+  background: linear-gradient(90deg, #234131, #81a25e, #234131);
   color: white;
 }
 
 .yellow-mode {
-  background: linear-gradient(90deg, #b5860b, #f3c507, #b5860b);
-  color: black;
+  background: linear-gradient(90deg, #250d10, #b49b6e, #250d10);
+  color: white;
 }
+
+
+/* .top-mode {
+  top: 0;
+} */
+
 
 
 body {
@@ -66,8 +115,37 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
-  background: black;
+  background: linear-gradient(90deg, black, #303030, black);
   color: white;
   height: 100%;
-  width: 100%;
+  width: auto;
+}
+
+.bordure {
+  display: flex contents;
+  padding-left: 0 3em;
+  justify-content: center;
+  border: 10px double white;
+}
+
+.Sexe {
+  size: 69x19;
+}
+
+.Prenom {
+  size: 158x21;
+}
+
+.impression {
+  size: 158x21;
+}
+
+.Effacer {
+  padding: 0 5em;
+  text-align: center;
+  size: 57x21;
+}
+
+.Enregistrer {
+  size: 81x21;
 }
