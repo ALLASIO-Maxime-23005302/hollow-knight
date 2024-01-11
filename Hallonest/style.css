@@ -1,3 +1,21 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background: linear-gradient(90deg, black, #303030, black);
+  color: white;
+  height: 100%;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+
 .couleur {
   display: flex;
   position: fixed;
@@ -6,16 +24,58 @@
   z-index: 100;
 }
 
-
-.bouton-haut a {
+header {
   position: fixed;
-  width: 100%;
-  height: auto;
   top: 0;
-  right: 25%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space;
+  align-items: center;
+  transition: 0.6s;
+  z-index: 100000;
+}
+
+header.sticky {
+  padding: 5px 20px;
+  background: #deddda;
+}
+
+.logo img {
+  height: auto;
+  width: auto;
+  max-width: 20%;
+  display: flex;
+  padding-left: 10%;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+}
+
+header ul li a {
+  position: relative;
+  margin: 0 5px;
+  text-decoration: none;
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
+
 }
 
 
+header.sticky ul li a {
+  color: #000;
+}
 
 .image-video video {
   width: 100%;
@@ -39,6 +99,7 @@
 
 
 
+
 .center {
   display: flex;
   justify-content: center;
@@ -52,6 +113,7 @@
 
 
 
+
 .partie_carte mine {
   right: 0;
   padding: 50px;
@@ -60,14 +122,12 @@
 .Mont_cristal {
   display: flex;
   justify-content: center;
-  padding: 50px;
 }
 
-.image_mine img {
+.Mont_cristal img {
   left: 0;
   height: auto;
-  max-width: 650px;
-  width: 75%;
+  max-width: 60%;
 }
 
 .cité_larme {
@@ -75,16 +135,57 @@
   justify-content: left;
   flex-direction: row-reverse;
   font-size: auto;
+  padding: 20px;
+}
+
+.cité_larme img {
+  right: 0;
+  height: auto;
+  max-width: 80%;
+}
+
+.Vertchemin img {
+  left: 0;
+  height: auto;
+  max-width: 80%;
+}
+
+.vertchemin_txt {
+  font-size: 1.2rem;
+}
+
+.Vertchemin {
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  font-size: auto;
   padding: 50px;
 }
 
-.cité_image img {
+.La_Ruche img {
   right: 0;
   height: auto;
-  max-width: 650px;
-  width: 100%;
+  max-width: 80%;
 }
 
+.Ruche_txt {
+  font-size-adjust: 50%;
+}
+
+.La_Ruche {
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding: 50px;
+}
+
+.Video {
+  display: flex;
+  justify-content: center;
+  max-height: 80%;
+  max-width: auto;
+}
 
 
 .dark-mode {
@@ -102,65 +203,101 @@
 }
 
 .pink-mode {
-  background: linear-gradient(90deg, #212121, #880297, #303030);
+  background: -webkit-linear-gradient(90deg, #a731b4, #cc7cd5, #a731b4);
+  background: -moz-linear-gradient(90deg, #a731b4, #cc7cd5, #a731b4);
+  background: linear-gradient(90deg, #a731b4, #cc7cd5, #a731b4);
   color: white;
 }
 
 .blue-mode {
+  background: -webkit-linear-gradient(90deg, #0D0056, #30615e, #0D0056);
+  background: -moz-linear-gradient(90deg, #0D0056, #30615e, #0D0056);
   background: linear-gradient(90deg, #0D0056, #30615e, #0D0056);
   color: white;
 }
 
 .green-mode {
+  background: -webkit-linear-gradient(90deg, #234131, #81a25e, #234131);
+  background: -moz-linear-gradient(90deg, #234131, #81a25e, #234131);
   background: linear-gradient(90deg, #234131, #81a25e, #234131);
   color: white;
 }
 
 .yellow-mode {
-  background: linear-gradient(90deg, #250d10, #b49b6e, #250d10);
+  background: -webkit-linear-gradient(90deg, #5D2B29, #F6C878, #5D2B29);
+  background: -moz-linear-gradient(90deg, #5D2B29, #F6C878, #5D2B29);
+  background: linear-gradient(90deg, #5D2B29, #F6C878, #5D2B29);
   color: white;
 }
 
-
-
-
-
-body {
-  text-align: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto;
-  background: linear-gradient(90deg, black, #303030, black);
+footer h1 a {
   color: white;
-  height: 100%;
-  width: auto;
 }
 
-.bordure {
-  display: flex contents;
-  padding-left: 0 3em;
-  justify-content: center;
-  border: 10px double white;
-}
+@media (max-width:1080px) {
 
-.Sexe {
-  size: 69x19;
-}
+  .partie_carte mine {
+    left: 0;
+  }
 
-.Prenom {
-  size: 158x21;
-}
+  .Mont_cristal {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+  }
 
-.impression {
-  size: 158x21;
-}
+  .Mont_cristal img {
+    left: 0;
+    height: auto;
+    max-width: 60%;
+  }
 
-.Effacer {
-  padding: 0 5em;
-  text-align: center;
-  size: 57x21;
-}
+  .cité_larme {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    font-size: auto;
+    padding: 20px;
+  }
 
-.Enregistrer {
-  size: 81x21;
+  .cité_larme img {
+    left: 0;
+    height: auto;
+    max-width: 80%;
+  }
+
+  .Vertchemin img {
+    left: 0;
+    height: auto;
+    max-width: 80%;
+  }
+
+  .vertchemin_txt {
+    font-size: 1.2rem;
+  }
+
+  .Vertchemin {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    font-size: auto;
+  }
+
+  .La_Ruche img {
+    right: 0;
+    height: auto;
+    max-width: 80%;
+  }
+
+  .Ruche_txt {
+    font-size-adjust: 50%;
+  }
+
+  .La_Ruche {
+    right: 0;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+  }
+
 }

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title> Formulaire </title>
+  <meta name="description"
+    content="Un petit site créé par des étudiants parlant de l'un des meilleurs jeux indépendant">
+  <meta name="Autheur" content="Allasio Maxime, Armani Baptiste">
+  <meta name="date" content="23-12-2023">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, target-densitydpi=device-dpi" />
+  <link rel="stylesheet" href="style2.css">
+  <link rel="icon" type="image/png" sizes="64x64" href="image/icon_site.webp">
+</head>
+
+<body>
+  <div class="contoure">
+    <form action="">
+      <h1 aria-label="Formulaire">Formulaire</h1>
+      <div class="cartouche">
+        <input type="texte" aria-label="prenom" placeholder="Prenom" required>
+      </div>
+      <div class="cartouche">
+        <input type="texte" aria-label="nom" placeholder="Nom" required>
+      </div>
+      <div class="sexe">
+        <selec aria-label="sexe">
+          <option value="homme" aria-label="homme"> <input type="radio" aria-label="homme"> Homme </option>
+          <option value="femme" aria-label="femme"> <input type="radio" aria-label="femme"> Femme </option>
+        </selec>
+
+      </div>
+      <div class="cartouche">
+        <textarea aria-label="zone_texte"> Ecrivez votre avis </textarea>
+      </div>
+      <div class="cartouche">
+        <input type="reset" value="Effacer" aria-label="effacer">
+      </div>
+      <div class="cartouche">
+        <button aria-label="bouton"><input type="button" value="Envoyer" aria-label="Envoyer"></button>
+      </div>
+
+    </form>
+
+  </div>
+</body>
+
+</html>

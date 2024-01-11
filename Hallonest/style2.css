@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50em;
+  background: url("image/hornet.webp") no-repeat fixed;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+}
+
+.contoure {
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  background: transparent;
+  display: flex contents;
+  justify-content: center;
+  border: 10px double;
+  height: auto;
+  width: auto;
+  color: white;
+}
+
+.cartouche button,
+.cartouche input {
+  width: 100%;
+}

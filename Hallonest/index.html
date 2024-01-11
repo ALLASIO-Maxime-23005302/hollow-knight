@@ -9,10 +9,14 @@
   <meta name="Autheur" content="Allasio Maxime, Armani Baptiste">
   <meta name="date" content="23-12-2023">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, target-densitydpi=device-dpi" />
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="page2.html">
+  <link rel="stylesheet" href="formulaire.html">
   <link rel="icon" type="image/png" sizes="64x64" href="image/icon_site.webp">
-  <script src="script.js"></script>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+
+
 
 </head>
 
@@ -21,45 +25,52 @@
   <!--<h1>Hollow Knight</h1>-->
   <!-- </a> -->
   <header>
-    <div class="couleur">
-      <select aria-label="couleur">
-        <option value="sombre" onclick="noir()">Nuit</option>
-        <option value="clair" onclick="blanc()">Jour</option>
-        <option value="Mine de cristal" onclick="rose()">Mine de cristal</option>
-        <option value="Cité des larmes" onclick="bleu()">Cité des larmes</option>
-        <option value="Vertchemin" onclick="vert()">Vertchemin</option>
-        <option value="La Ruche" onclick="jaune()">La Ruche</option>
-      </select>
-    </div>
 
-    <div class="bouton-haut">
-      <a href="#"><button>up</button></a>
-    </div>
+    <a href="#" class="logo"> <img type="image/png" src="image/logo_hornet.webp" alt="image hornet" /> </a>
+    <ul>
+      <li>
+        <a>
+          <div>
+            <select aria-label="couleur" id="theme">
+              <option value="black">Nuit</option>
+              <option value="light">Jour</option>
+              <option value="pink">Mont cristal</option>
+              <option value="blue">Cité des larmes</option>
+              <option value="green">Vertchemin</option>
+              <option value="yellow">La Ruche</option>
+            </select>
+          </div>
+        </a>
+      </li>
+      <li> <a href="#Accueil">Accueil</a> </li>
+      <li> <a href="#carte">Carte du jeu</a> </li>
+    </ul>
+  </header>
 
 
 
-    <div class="image-video">
-      <video id="background-video" autoplay loop mute>
-        <source src="Hollow Knight Website Header.mp4" type="video/mp4" alt="extrait du jeu">
-      </video>
-      <img type="image/png" src="image/logo_main.webp" alt="Logo du jeu hollow knight" />
-    </div>
+  <div class="image-video">
+    <video id="background-video" autoplay loop mute>
+      <source src="Hollow Knight Website Header.mp4" type="video/mp4" alt="extrait du jeu">
+    </video>
+    <img type="image/png" src="image/logo_main.webp" alt="Logo du jeu hollow knight" />
+  </div>
   </header>
 
 
   <br><br><br><br>
 
   <div class="début">
-    <div class="accueil" align="left">
+    <div class="accueil" align="left" id="Accueil">
       <p1>
         <h1>
           ACCUEIL
         </h1>
       </p1>
       <p2>
-        <h2>
+        <h3>
           Se site est un fandom sur le jeu hollow knight, (à continuer)
-        </h2>
+        </h3>
       </p2>
     </div>
     <div class="cadre_image">
@@ -109,7 +120,7 @@
 
 
   <div class="partie_carte">
-    <div class="carte" align="left">
+    <div class="carte" align="left" id="carte">
       <p1>
         <h1>
           Carte :
@@ -117,10 +128,8 @@
       </p1>
     </div>
     <div class="Mont_cristal">
-      <div class="image_mine" , align="left">
-        <a href="image/carte_mont_cristal.webp"><img src="image/carte_mont_cristal.webp" type="image/png"
-            alt="Mont cristal" /></a>
-      </div>
+      <a href="image/carte_mont_cristal.webp"><img src="image/carte_mont_cristal.webp" type="image/png"
+          alt="Mont cristal" /></a>
       <div class="mine" align="right">
         <strong>
           <h1>Mont cristal</h1>
@@ -136,12 +145,10 @@
     </div>
     <br><br>
     <div class="cité_larme">
-      <div class="cité_image" align="right">
-        <a href="image/Carte Cité.webp"><img src="image/Carte Cité.webp" type="image/png" alt="Cité des larmes" /></a>
-      </div>
+      <a href="image/Carte Cité.webp"><img src="image/Carte Cité.webp" type="image/png" alt="Cité des larmes" /></a>
       <div class="cite_larme" align="left">
         <h1>
-          <mark>Cité des larmes</mark>
+          Cité des larmes
         </h1>
         <h2>
           <p1>Cette ville est considérée comme la capitale d'Hallownest. Elle a été construite dans une immense
@@ -155,14 +162,66 @@
         </h2>
       </div>
     </div>
+    <div class="Vertchemin">
+      <a href="image/Vertchemin.webp"><img src="image/Vertchemin.webp" type="image/png" alt="VertChemin" /></a>
+      <div class="vertchemin_txt" align="right">
+        <strong>
+          <h2>
+            Vertchemin
+            <p>
+              VertChemin est une zone de la carte qui se trouve dans la partie gauche. Cette partie est caractérisé par
+              ça
+              nature envahissante mais aussi par sa couleur vert.<br>
+              En se baladant dans cette zone nous pourrons voir que la nature qui y vit peut être passive comme décore
+              ou
+              joue un role dans l'aventure.
+            </p>
+          </h2>
+        </strong>
+      </div>
+    </div>
+  </div>
+  <div class="La_Ruche">
+    <div class="Ruche_img">
+      <a href="image/La Ruche.webp"><img src="image/La Ruche.webp" type="image/png" alt="La Ruche" /></a>
+    </div>
+    <div class="Ruche_txt" align="left">
+      <strong>
+        <h2>
+          La Ruche
+        </h2>
+        <p>
+          La Ruche ce trouve dans la partie inférieure droite de la carte. <br> Dans le jeu initial, cette partie de la
+          carte était juste un DLC.
+          <br>Dans cette partie la carte nous pourront récupérer des objets intéressant pour
+          améliorer le personnage.
+        </p>
+      </strong>
+    </div>
   </div>
 
   <br><br><br><br>
 
-  <footer>
-    <a href="page2.html">Ecrivez votre avis</a>
-  </footer>
+  <div>
+    <p>
+    <h1>
+      Pour en savoir +
+    </h1>
+    </p>
+    <div class="Video">
+      <video controls>
+        <source src="hollow knight trailer.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div>
+      <footer>
+        <h1>
+          <a href="formulaire.html">Ecrivez votre avis</a>
+        </h1>
+      </footer>
+    </div>
 
+    <script src="script.js" defer></script>
 </body>
 
 </html>
