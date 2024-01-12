@@ -30,7 +30,7 @@ header {
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: space;
+  justify-content: space-around;
   align-items: center;
   transition: 0.6s;
   z-index: 100000;
@@ -43,7 +43,7 @@ header.sticky {
 
 .logo img {
   height: auto;
-  width: auto;
+  width: 50%;
   max-width: 20%;
   display: flex;
   padding-left: 10%;
@@ -63,11 +63,11 @@ header ul li {
 
 header ul li a {
   position: relative;
-  margin: 0 5px;
+  margin: 0 10px;
   text-decoration: none;
   color: #ffffff;
   letter-spacing: 2px;
-  font-weight: 500px;
+  font-weight: 500;
   transition: 0.6s;
 
 }
@@ -108,7 +108,6 @@ header.sticky ul li a {
 .les_textes {
   padding: 0 2em;
   border: 5px double white;
-  size-adjust: auto;
 }
 
 
@@ -134,7 +133,7 @@ header.sticky ul li a {
   display: flex;
   justify-content: left;
   flex-direction: row-reverse;
-  font-size: auto;
+  font-size: 90%;
   padding: 20px;
 }
 
@@ -151,25 +150,24 @@ header.sticky ul li a {
 }
 
 .vertchemin_txt {
-  font-size: 1.2rem;
+  font-size: 90%;
 }
 
 .Vertchemin {
   display: flex;
   justify-content: left;
   flex-direction: row;
-  font-size: auto;
   padding: 50px;
 }
 
 .La_Ruche img {
   right: 0;
   height: auto;
-  max-width: 80%;
+  max-width: 60%;
 }
 
 .Ruche_txt {
-  font-size-adjust: 50%;
+  font-size: 90%;
 }
 
 .La_Ruche {
@@ -180,11 +178,56 @@ header.sticky ul li a {
   padding: 50px;
 }
 
-.Video {
+.Video video {
   display: flex;
-  justify-content: center;
   max-height: 80%;
-  max-width: auto;
+  max-width: 40%;
+  padding-left: 34%;
+  width: 30%;
+}
+
+.pour_info iframe {
+  align-items: center;
+  max-width: 80%;
+  width: auto;
+  height: auto;
+  max-height: 80%;
+}
+
+.Reseaux {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 42%;
+  flex-direction: row;
+
+}
+
+.Discord img {
+  display: flex;
+  right: 0;
+  max-width: 50%;
+  height: auto;
+  max-height: 70%;
+  width: auto;
+}
+
+.insta img {
+  display: flex;
+  right: 50%;
+  align-items: center;
+  max-width: 50%;
+  height: auto;
+  max-height: 70%;
+  width: auto;
+}
+
+.myspace img {
+  display: flex;
+  right: 50%;
+  max-width: 20%;
+  height: auto;
+  max-height: 30%;
+  width: auto;
 }
 
 
@@ -234,6 +277,7 @@ footer h1 a {
   color: white;
 }
 
+/* affichage téléphone */
 @media (max-width:1080px) {
 
   .partie_carte mine {
@@ -254,9 +298,9 @@ footer h1 a {
 
   .cité_larme {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     flex-direction: column;
-    font-size: auto;
+    font-size: 90%;
     padding: 20px;
   }
 
@@ -269,18 +313,18 @@ footer h1 a {
   .Vertchemin img {
     left: 0;
     height: auto;
-    max-width: 80%;
+    max-width: 90%;
   }
 
   .vertchemin_txt {
-    font-size: 1.2rem;
+    font-size: 90%;
   }
 
   .Vertchemin {
     display: flex;
     justify-content: left;
     flex-direction: column;
-    font-size: auto;
+    font-size: 90%;
   }
 
   .La_Ruche img {
@@ -290,7 +334,7 @@ footer h1 a {
   }
 
   .Ruche_txt {
-    font-size-adjust: 50%;
+    font-size: 80%;
   }
 
   .La_Ruche {
@@ -298,6 +342,95 @@ footer h1 a {
     display: flex;
     justify-content: left;
     flex-direction: column;
+  }
+
+  .Video video {
+    display: flex;
+    max-height: 80%;
+    max-width: 40%;
+    width: 50%;
+  }
+
+  .Reseaux {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 10%;
+    flex-direction: row;
+  }
+
+  .Discord img {
+    display: flex;
+    right: 60%;
+    height: 80%;
+    width: 90%;
+  }
+
+  .insta img {
+    display: flex;
+    right: 80%;
+    max-width: 100%;
+    height: 80%;
+    max-height: 100%;
+    width: 80%;
+  }
+
+  .myspace img {
+    display: flex;
+    right: 20%;
+    height: 100%;
+    width: 80%;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.6s;
+    z-index: 100000;
+  }
+
+  header.sticky {
+    background: #deddda;
+  }
+
+  .logo img {
+    height: auto;
+    width: auto;
+    max-width: 20%;
+    display: flex;
+    padding-left: 10%;
+  }
+
+  header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header ul li {
+    position: relative;
+    list-style: none;
+  }
+
+  header ul li a {
+    position: relative;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: 0.6s;
+
+  }
+
+
+  header.sticky ul li a {
+    color: #000;
   }
 
 }

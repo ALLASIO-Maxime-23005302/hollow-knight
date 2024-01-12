@@ -3,7 +3,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 50em;
-  background: url("image/hornet.webp") no-repeat fixed;
+  background: url("../image/hornet.webp") no-repeat fixed;
   background-size: cover;
   background-position: center;
   box-sizing: border-box;
@@ -13,13 +13,14 @@ body {
   backdrop-filter: blur(20px);
   border-radius: 10px;
   background: transparent;
-  display: flex contents;
+  display: contents;
   justify-content: center;
-  border: 10px double;
+  border: 10px double #000;
   height: auto;
   width: auto;
-  color: white;
+  color: black;
 }
+
 
 .cartouche button,
 .cartouche input {

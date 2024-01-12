@@ -10,8 +10,9 @@
   <meta name="date" content="23-12-2023">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="viewport" content="width=device-width, target-densitydpi=device-dpi" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <link rel="stylesheet" href="style2.css">
-  <link rel="icon" type="image/png" sizes="64x64" href="image/icon_site.webp">
+  <link rel="icon" type="image/png" sizes="64x64" href="../image/icon_site.webp">
 </head>
 
 <body>
@@ -24,12 +25,19 @@
       <div class="cartouche">
         <input type="texte" aria-label="nom" placeholder="Nom" required>
       </div>
+      <div class="cartouche">
+        <input type="email" aria-label="Email" placeholder="Email" required>
+      </div>
       <div class="sexe">
-        <selec aria-label="sexe">
-          <option value="homme" aria-label="homme"> <input type="radio" aria-label="homme"> Homme </option>
-          <option value="femme" aria-label="femme"> <input type="radio" aria-label="femme"> Femme </option>
-        </selec>
-
+        <fieldset>
+          <legend>
+            Choisissez votre sexe :
+          </legend>
+          <input type="radio" id="Femme" name="sexe" value="Femme" />
+          <label for="Femme"> Femme </label>
+          <input type="radio" id="Homme" name="sexe" value="Homme" />
+          <label for="Homme">Homme</label>
+        </fieldset>
       </div>
       <div class="cartouche">
         <textarea aria-label="zone_texte"> Ecrivez votre avis </textarea>
